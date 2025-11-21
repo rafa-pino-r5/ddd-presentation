@@ -720,7 +720,7 @@ Ejemplo: Para "AprobarEmisión", se necesita "ResultadoValidaciónRUNT"`,
 4. Sistema produce un Domain Event
 5. Event puede activar una Policy
 6. Policy genera nuevo comando`,
-    image: '/images/software-picture.png',
+    image: '/images/software-picture.jpg',
   },
   {
     id: 39,
