@@ -451,7 +451,7 @@ Ejemplo: Para "AprobarEmisión", se necesita "ResultadoValidaciónRUNT"`},{id:38
 3. Comando puede invocar sistema externo
 4. Sistema produce un Domain Event
 5. Event puede activar una Policy
-6. Policy genera nuevo comando`,image:"/images/software-picture.png"},{id:39,category:"tools",title:"Herramientas DDD - Agregados (Aggregates)",pitch:`> Un Aggregate es un cluster de objetos del dominio (entities y value objects) que se tratan como una unidad para cambios de datos. El aggregate tiene una entidad raíz (Aggregate Root) que es el único punto de entrada.
+6. Policy genera nuevo comando`,image:"/images/software-picture.jpg"},{id:39,category:"tools",title:"Herramientas DDD - Agregados (Aggregates)",pitch:`> Un Aggregate es un cluster de objetos del dominio (entities y value objects) que se tratan como una unidad para cambios de datos. El aggregate tiene una entidad raíz (Aggregate Root) que es el único punto de entrada.
 
 **Responsabilidades:**
 - Recibe comandos
