@@ -7,6 +7,7 @@ import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { Card, CardHeader, CardTitle, CardContent } from './ui/Card';
 import { Quote } from './ui/Quote';
 import { ImageModal } from './ui/ImageModal';
+import { getImagePath } from '../utils/getImagePath';
 
 interface SlideCardProps {
   title: string;
@@ -48,10 +49,10 @@ export const SlideCard = ({ title, pitch, image, patterns }: SlideCardProps) => 
           {image && (
             <div className="md:w-1/2">
               <img
-                src={image}
+                src={getImagePath(image)}
                 alt={title}
                 className="w-full rounded-lg border border-slate-200 bg-slate-100 object-contain cursor-pointer hover:opacity-90 transition-opacity"
-                onClick={() => setModalImage({ src: image, alt: title })}
+                onClick={() => setModalImage({ src: getImagePath(image), alt: title })}
               />
             </div>
           )}
@@ -71,10 +72,10 @@ export const SlideCard = ({ title, pitch, image, patterns }: SlideCardProps) => 
                   >
                     <div 
                       className="mb-3 flex items-center justify-center bg-slate-50 rounded p-2 cursor-pointer hover:bg-slate-100 transition-colors"
-                      onClick={() => setModalImage({ src: pattern.image, alt: pattern.title })}
+                      onClick={() => setModalImage({ src: getImagePath(pattern.image), alt: pattern.title })}
                     >
                       <img
-                        src={pattern.image}
+                        src={getImagePath(pattern.image)}
                         alt={pattern.title}
                         className="w-full h-32 object-contain"
                       />
